@@ -18,7 +18,7 @@ def append_file():
     filename = input("Enter file name to append: ")
     data = input("Enter data to add: ")
     file = open(filename, "a")
-    file.write("\n" + data)
+    file.write(data)
     file.close()
     print("Data appended successfully")
 
@@ -26,7 +26,7 @@ def read_file():
     filename = input("Enter file name to read: ")
     file = open(filename, "r")
     content = file.read()
-    print("File Content:\n", content)
+    print("File Content:", content)
     file.close()
 
 def delete_file():
